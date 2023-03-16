@@ -1,0 +1,17 @@
+<div class="container">
+
+    <div class="row">
+      <div class="col" *ngFor="let item of data">
+
+        <div class="card" style="width: 20rem; height:400px;">
+            <img src="{{item.image}}" height="200" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{item.name}}</h5>
+              <p class="card-text">{{item.details}}</p>
+             <!----<a (click)="gotoHere(item.name)" class="btn btn-primary">click</a>--> 
+             <a (click)="gotoHere(item.name)" class="btn btn-primary">More Details</a>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>

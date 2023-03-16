@@ -1,0 +1,53 @@
+.container {
+   /* width:300px; */
+    float: center;
+    font-size: larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: var();
+   font-style: calc();
+    background: sandybrown;
+  }
+
+ h5{
+    font-size: xx-large;
+    color:rgb(233, 228, 228);
+ }
+p{
+   font-size: larger;
+   color:rgb(246, 241, 241);
+ font-size: x-large;
+
+   
+}
+
+  button:hover{
+    
+    text-align: center;
+    color:black;
+    
+    
+
+}
+a{
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    color:black;
+    
+}
+.t{
+    align-items: center;
+   
+ 
+
+    
+}
+.c{
+    align-content: center;
+    text-align: center;
+   
+}
+.u{
+    font-size: large;
+    color: black;
+}
