@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "rental-94675": {
+      "hosting": {
+        "homerentel": [
+          "rental-94675"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "rental-94675"
+  }
+}

@@ -35,6 +35,7 @@
   
   .contact_us_6 .responsive-container-block {
     min-height: 75px;
+    color: #000609;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -87,7 +88,6 @@
     padding-right: 40px;
     padding-bottom: 50px;
     padding-left: 40px;
-    box-shadow: rgba(201, 195, 195, 0.05) 0px 4px 20px 7px;
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
     border-bottom-right-radius: 6px;
@@ -284,7 +284,7 @@
   .contact_us_6 .text-blk.map-contactus-subhead {
     max-width: 300px;
     font-size: 18px;
-    color:white;
+    color:rgb(236, 231, 231);
     margin-top: 0px;
     margin-right: 0px;
     margin-bottom: 20px;

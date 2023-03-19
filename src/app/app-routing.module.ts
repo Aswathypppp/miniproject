@@ -11,6 +11,7 @@ import { SingleComponent } from './pages/single/single.component';
 import { BooknowComponent } from './pages/booknow/booknow.component';
 import { OurservicesComponent } from './pages/ourservices/ourservices.component';
 import { PaymentComponent } from './pages/payment/payment.component';
+import { TermsComponent } from './pages/terms/terms.component';
 
 
 const routes: Routes = [
@@ -49,7 +50,10 @@ const routes: Routes = [
    },
    {
    path:"payment",component:PaymentComponent
-   }
+   },
+   {
+    path:"terms",component:TermsComponent
+   },
 
  
 ];

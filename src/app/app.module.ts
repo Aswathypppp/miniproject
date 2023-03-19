@@ -16,7 +16,14 @@ import { SingleComponent } from './pages/single/single.component';
 import { BooknowComponent } from './pages/booknow/booknow.component';
 import { OurservicesComponent } from './pages/ourservices/ourservices.component';
 import { PaymentComponent } from './pages/payment/payment.component';
-
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideAuth,getAuth } from '@angular/fire/auth';
+import { provideDatabase,getDatabase } from '@angular/fire/database';
+import { provideFirestore,getFirestore } from '@angular/fire/firestore';
+import { FormsModule } from '@angular/forms';
+import { TermsComponent } from './pages/terms/terms.component';
+import { AngularFireModule } from '@angular/fire/compat';
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,11 +39,19 @@ import { PaymentComponent } from './pages/payment/payment.component';
     SingleComponent,
     BooknowComponent,
     OurservicesComponent,
-    PaymentComponent
+    PaymentComponent,
+    TermsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+   AngularFireModule.initializeApp(environment.firebase),
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideAuth(() => getAuth()),
+    provideDatabase(() => getDatabase()),
+    provideFirestore(() => getFirestore()),
+   
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -6,11 +6,11 @@
          </div>
          <form action="#">
             <div class="field">
-               <input type="text" required>
+               <input type="email" [(ngModel)]="email" name="email" placeholder="email">
                <label>Email Address</label>
             </div>
             <div class="field">
-               <input type="password" required>
+               <input type="password"[(ngModel)]="password" name="password" placeholder="password">
                <label>Password</label>
             </div>
             <div class="content">
@@ -19,11 +19,11 @@
                   <label for="remember-me">Remember me</label>
                </div>
                <div class="pass-link">
-                  <a href="#">Forgot password?</a>
+                  <a href="signup">Forgot password?</a>
                </div>
             </div>
             <div class="field">
-               <input type="submit" value="Login">
+               <input type="submit" (click)="login()" value="Login">
             </div>
             <div class="signup-link">
                Not a member? <a href="signup">Signup Now</a>
@@ -33,17 +33,12 @@
 
 </body>
 
-
-
-
-
-
-
-
-
  
 
 <footer>
    <p>© Copyright 2023 rentalhomes</p>
    <p><a href="rentalhomes@gmail.com">rentalhomes@gmail.com</a></p>
  </footer>
+
+
+ 
