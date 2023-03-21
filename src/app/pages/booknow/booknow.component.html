@@ -1,104 +1,44 @@
-<br>
-<body>
-<div class="row">
-    <div class="col-75">
-      <div class="container">
-       <h2>Home Booking Form</h2>
-        <form action="submit_phpcrm_form.php" method="POST">
-          <div class="row">
-            <div class="col-50">
-              <input type="text" id="fname" required  name="name" placeholder="Name">  
-            </div>
-           </div>
-                <div class="row">
-              <div class="col-50">
-                  <input type="email" name="email" required placeholder="Email">
-              </div>
-              <div class="col-50">
-                 <input type="number" name="phone" required placeholder="Phone">
-             </div>
-          </div>
-              <div class="row">
-                <div class="col-50">
-                  <input type="text" id="address" name="address" placeholder="Address">
-                </div>     
-           </div>
-           <div class="row">
-               <div class="col-50">
-                   <input type="text" name="city" required placeholder="City">
-               </div>
-               <div class="col-50">
-                  <input type="text" name="state" required placeholder="State">
-              </div>
-           </div>
-           <div class="row">
-              <div class="col-50">
-                  <input type="number" name="zip_code" required placeholder="Zip Code">
-              </div>
-              <div class="col-50">
-                 <input type="text" name="country" required placeholder="Country">
-             </div>
-          </div>
-          <div class="row">
-              <div class="col-50">
-                  <label>Check In</label>
-                  <input type="date" name="check_in_date" required >
-              </div>
-              <div class="col-50">
-                  <label>Check Out</label>
-                 <input type="date" name="check_out_date" required >
-             </div>
-          </div>
-          <div class="row">
-            <div class="col-50">
-                <input type="number" name="no_of_person" placeholder="No Of Person" required >
-            </div>
-            <div class="col-50">
-              <select name="no_of_male" >
-                <option value="null">Male</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-              </select>
-            </div>
-        </div>
-         <div class="row">
-          <div class="col-50">
-              <select name="no_of_female" >
-                <option value="null">Female</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-              </select>
-          </div>
-          <div class="col-50">
-            <select name="no_of_kids" >
-              <option value="null">Kids</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-            </select>
-        </div>
-        </div>
+<h2 class="h2-responsive fw-bold text-center my-2">
+   Home Booking Form
+</h2>
+<br><br>
+<div class="container">
+  <form #f="ngForm" (ngSubmit)="addData(f)">
+      <label for="fname">First Name</label>
+      <input type="text"  name="name" placeholder="Your name.." required [(ngModel)]="name">
+  
+      <label for="Email">E-mail</label>
+      <input type="text"  name="Email" placeholder="Your email.." required [(ngModel)]="email">
+      <label for="phonenumber"> Phone Number</label>
+      <input type="text"  name="phno" placeholder="Your phone no.." required [(ngModel)]="phone">
+
+      <label for="currentaddress">Current Address</label>
+      <input type="text"  name="currentaddress" placeholder=" Current Address.." required [(ngModel)]="currentaddress">
+     
+      <label for="noofpersons">Number of Persons</label>
+      <input type="text"  name="noofpersons" placeholder=" No of Persons..  " required [(ngModel)]="noofpersons">
+
+      <label for="noofperiod">Number of Period</label>
+      <input type="text"  name="noofperiod" placeholder=" Number of period.. " required [(ngModel)]="noofperiod">
+<!--       
+      <div class="form-group">
+        <label for="exampleFormControlSelect1">Distance</label>
+        <select class="form-control" id="exampleFormControlSelect1">
+          <option>Below 10km</option>
+          <option>Above10-20km</option>
+          <option>20-40km</option>
+          <option>50-100km</option>
+          <option>Above 100km</option>
+        </select>
+      </div>
+   -->
+      <label for="message"> Ask Any Queries About Home</label>
+      <textarea  name="message" placeholder="Write any queries.." style="height:200px" required [(ngModel)]="message"></textarea>
+  
+      <input type="submit"  value="Book Now" />
+      <div class="c"><button class='t'><a class="m" href="payment">Payment</a></button></div>
       
-          <input type="submit" value="Book Now" class="btn">
+    </form>
 
-          <div class="c"><button class='t'><a class="m" href="payment">Payment</a></button></div>
+  </div>
 
-
-
-</form>
-
-
-
-
-
-
-
-   
